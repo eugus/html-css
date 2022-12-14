@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: blue;
+            padding: 4px;
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+           
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: red;
+        }
+        
+        article > aside {
+            background-color: pink;
+            text-align: right;
+
+        }
+
+        section#assuntos {
+            color: blue;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50px;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://youtu.be/WEeXHzchEdA" target="_blank">Link</a>
+            <a href="https://youtu.be/vdbhKBGbsVM" target="_blank">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Formula 1 ao vivo</p>
+
+        </section>
+        <section>
+            <article>
+                <h2>Noticias sobre f1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis cumque, dolorem eum maxime quia facilis, accusantium inventore ut odit quo sunt tempore, ad at et molestias neque est? Animi?</p>
+                <aside>
+                    <p>Artigo escrito por Luis Gustavo</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Luis Gustavo</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
