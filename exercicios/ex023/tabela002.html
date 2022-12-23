@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(imagens/paisagem2.jpg);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th {
+            background-color: #AACCFF;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #363636;
+
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            
+            
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia para tabelas grandes 
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    
+
+    <table>
+        <caption> População das Unidades Federatvas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio deJaniero</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.308</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630	</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.777.124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.153.262</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td>Esperito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td>4.059.905</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3.567.234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td>3.560.903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3.365.351</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis in laboriosam, nulla alias quasi nemo adipisci assumenda odio placeat a delectus autem similique voluptatibus suscipit nostrum labore inventore! Culpa, consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam perspiciatis dolores labore dolorem praesentium ut exercitationem culpa quidem consectetur ex animi iste aperiam inventore, perferendis omnis sunt nulla beatae ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet minima dignissimos minus fuga nam. Dicta iure dolorem nostrum, autem nihil nulla fugiat similique, sit illo, debitis cumque impedit sint! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia repellat perferendis, repudiandae sapiente cumque amet dignissimos omnis in ab recusandae facere nostrum maiores autem aut totam rem! Praesentium, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, cupiditate vel nobis, officiis voluptas minima placeat facere aliquam nisi rerum non corrupti natus repudiandae veniam magnam provident sequi eos reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis in laboriosam, nulla alias quasi nemo adipisci assumenda odio placeat a delectus autem similique voluptatibus suscipit nostrum labore inventore! Culpa, consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam perspiciatis dolores labore dolorem praesentium ut exercitationem culpa quidem consectetur ex animi iste aperiam inventore, perferendis omnis sunt nulla beatae ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet minima dignissimos minus fuga nam. Dicta iure dolorem nostrum, autem nihil nulla fugiat similique, sit illo, debitis cumque impedit sint! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia repellat perferendis, repudiandae sapiente cumque amet dignissimos omnis in ab recusandae facere nostrum maiores autem aut totam rem! Praesentium, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, cupiditate vel nobis, officiis voluptas minima placeat facere aliquam nisi rerum non corrupti natus repudiandae veniam magnam provident sequi eos reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis in laboriosam, nulla alias quasi nemo adipisci assumenda odio placeat a delectus autem similique voluptatibus suscipit nostrum labore inventore! Culpa, consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam perspiciatis dolores labore dolorem praesentium ut exercitationem culpa quidem consectetur ex animi iste aperiam inventore, perferendis omnis sunt nulla beatae ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet minima dignissimos minus fuga nam. Dicta iure dolorem nostrum, autem nihil nulla fugiat similique, sit illo, debitis cumque impedit sint! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia repellat perferendis, repudiandae sapiente cumque amet dignissimos omnis in ab recusandae facere nostrum maiores autem aut totam rem! Praesentium, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, cupiditate vel nobis, officiis voluptas minima placeat facere aliquam nisi rerum non corrupti natus repudiandae veniam magnam provident sequi eos reiciendis!</p>
+</body>
+</html>
